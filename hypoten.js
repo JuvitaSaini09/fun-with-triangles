@@ -11,22 +11,20 @@ function calculateSumOfSquares(A, B) {
 }
 
 function checkHypotenuse() {
-    error.style.display="none";
-    result.style.display="none";
+    error.style.display = "none";
+    result.style.display = "none";
 
     if (inputA.value && inputB.value) {
         const valueOfA = inputA.value;
         const valueOfB = inputB.value;
         sumOfSquares = calculateSumOfSquares(valueOfA, valueOfB);
         const hypoTenus = Math.sqrt(sumOfSquares);
-        result.style.display="inline";
-        result.innerText =hypoTenus;
+        result.style.display = "inline";
+        result.innerText = hypoTenus;
     } else {
-        error.style.display="block";
+        error.style.display = "block";
         error.innerText = "Enter all  the values  !!";
     }
 }
 btnHypotenuse.addEventListener("click",
     checkHypotenuse)
-
-   

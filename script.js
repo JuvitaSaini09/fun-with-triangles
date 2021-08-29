@@ -4,10 +4,10 @@ const angle3 = document.querySelector("#angle3-input");
 const btn = document.querySelector("#Is-triangle-button")
 const result = document.querySelector("#result");
 
-function checkingTriangle(){
+function checkingTriangle() {
 
-    if(angle1.value&& angle2.value && angle3.value) {
-        
+    if (angle1.value && angle2.value && angle3.value) {
+
         const angle_1 = Number(angle1.value);
         const angle_2 = Number(angle2.value);
         const angle_3 = Number(angle3.value);
@@ -15,22 +15,18 @@ function checkingTriangle(){
 
         if (angleSum === 180) {
             result.innerText = "Yay!! It can form a triangle";
-        }
-         else {
+        } else {
             result.innerText = "ohoo !! they don't form a  angle";
-        } 
-    }
-
-    else{
+        }
+    } else {
         result.innerText = "Enter all the values  !!";
 
     }
 }
 
-    function sumOfTriangle(angleOne, angleTwo, angleThree) {
-        const angleSum = angleOne + angleTwo + angleThree;
-        return angleSum;
-    }
+function sumOfTriangle(angleOne, angleTwo, angleThree) {
+    const angleSum = angleOne + angleTwo + angleThree;
+    return angleSum;
+}
 
-    btn.addEventListener("click", checkingTriangle)
- 
+btn.addEventListener("click", checkingTriangle)
