@@ -33,3 +33,4 @@ function checkingTriangle(){
     }
 
     btn.addEventListener("click", checkingTriangle)
+ 
