@@ -3,21 +3,31 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-size: 20px;
   background-color: rgb(158, 158, 202);
 }
+
 nav{
     background-color: rgb(54, 54, 167);
    height:60px;
 }
-a{ 
-    color:white;
-    text-decoration:none;
-    padding: 10px;
-    margin-left:5%;
-    font-size: 22px;
- 
+
+.navigation-list {
+    text-align: right;
+    margin-top: 0px;
+    padding-top: 10px;
 }
+ li{
+    display: inline;
+    list-style-type: none;
+    padding: 0px 10px;
+
+}
+.nav-list {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 h1{
     text-align: center;
     margin-top:60px;

@@ -21,3 +21,4 @@ function checkHypotenuse() {
 }
 btnArea.addEventListener("click",
     checkHypotenuse)
+   
