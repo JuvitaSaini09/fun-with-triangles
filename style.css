@@ -19,12 +19,12 @@ nav{
  li{
     display: inline;
     list-style-type: none;
-    padding: 0px 10px;
+    padding: 0px 5px;
 
 }
 .nav-list {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
 }
 
