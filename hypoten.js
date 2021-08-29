@@ -2,7 +2,7 @@ const inputA = document.querySelector("#first-input");
 const inputB = document.querySelector("#second-input");
 const btnHypotenuse = document.querySelector("#button-hypotenuse");
 const result = document.querySelector("#result");
-const error = document.querySelector("#error");
+
 
 
 function calculateSumOfSquares(A, B) {
@@ -11,7 +11,6 @@ function calculateSumOfSquares(A, B) {
 }
 
 function checkHypotenuse() {
-    error.style.display = "none";
     result.style.display = "none";
 
     if (inputA.value && inputB.value) {
@@ -19,11 +18,11 @@ function checkHypotenuse() {
         const valueOfB = inputB.value;
         sumOfSquares = calculateSumOfSquares(valueOfA, valueOfB);
         const hypoTenus = Math.sqrt(sumOfSquares);
-        result.style.display = "inline";
+        result.style.display = "block";
         result.innerText = hypoTenus;
     } else {
-        error.style.display = "block";
-        error.innerText = "Enter all  the values  !!";
+        result.style.display = "block";
+        result.innerText = "Enter all  the values  !!";
     }
 }
 btnHypotenuse.addEventListener("click",
