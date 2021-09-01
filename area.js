@@ -13,14 +13,13 @@ function checkHypotenuse() {
         const Area = (Height * Base) / 2;
         result.style.display = "block";
 
-        result.style.color="green";
-        result.innerText = "Area :"+Area+" cmsquares";
+        result.style.color = "green";
+        result.innerText = "Area :" + Area + " cmsquares";
     } else {
         result.style.display = "block";
-        result.style.color="red";
+        result.style.color = "red";
         result.innerText = "Enter all  the values  !!";
     }
 }
 btnArea.addEventListener("click",
     checkHypotenuse)
-   

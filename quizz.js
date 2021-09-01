@@ -10,12 +10,12 @@ function OnClickHandler() {
     let scores = 0;
     const formValues = new FormData(answers);
     for (let input of formValues.values()) {
-        if((rightAnswers[index])=== input) {
+        if ((rightAnswers[index]) === input) {
             scores = scores + 1;
         }
         index++;
     }
-    result.style.color="green";
+    result.style.color = "green";
     result.innerText = "scores are :" + scores;
 }
 
