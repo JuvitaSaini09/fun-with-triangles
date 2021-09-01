@@ -3,7 +3,7 @@ const btnForScores = document.querySelector("#submit-button");
 const result = document.querySelector("#result");
 
 
-const rightAnswers = ["90°", "right angled", "60°", "Hypotenuse", "right angle triangle"];
+const rightAnswers = ["90°", "right angled", "60°", "Hypotenuse", "right angle"];
 
 function OnClickHandler() {
     let index = 0;
