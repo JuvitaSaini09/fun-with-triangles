@@ -1,76 +1,107 @@
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: rgb(158, 158, 202);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(158, 158, 202);
 }
 
-nav{
+nav {
     background-color: rgb(54, 54, 167);
-   height:60px;
+    height: 60px;
 }
 
 .navigation-list {
     text-align: right;
     margin-top: 0px;
     padding-top: 10px;
-    
+
 }
- li{
+
+li {
     display: inline;
     list-style-type: none;
     padding: 0px 5px;
 
 }
+
 .nav-list {
     color: white;
     font-size: 16px;
     text-decoration: none;
 }
 
-h1{
+h1 {
     text-align: center;
-    margin-top:60px;
-    color:rgb(46, 46, 187);
+    margin-top: 60px;
+    color: rgb(46, 46, 187);
 }
-input,button{
-    display:block;
-    margin:auto;
-   
+
+input,
+button {
+    display: block;
+    margin: auto;
+
 }
-label{
-    display:block;
-    text-align:center;
-    padding:10px;
+
+label {
+    display: block;
+    text-align: center;
+    padding: 10px;
 }
-input{
-    width:60%;
-    height:20px;
+
+input {
+    width: 60%;
+    height: 20px;
 }
-button{
-    margin-top:20px;
-    width:110px;
-    height:40px;
+
+button {
+    margin-top: 20px;
+    width: 110px;
+    height: 40px;
     font-size: 18px;
     border-radius: 5px;
 
 }
-button:hover{
-    background-color:rgb(67, 67, 218);
+
+button:hover {
+    background-color: rgb(67, 67, 218);
 }
-#underline1,#underline2,#underline3,#underline4{
+
+#underline1,
+#underline2,
+#underline3,
+#underline4 {
     text-decoration: underline;
 }
-#result,span{
 
-    margin:auto;
-    color:rgb(32, 32, 139);
-    font-weight:bold;
+#result,
+span {
+
+    margin: auto;
+    color: rgb(32, 32, 139);
+    font-weight: bold;
     font-size: 30px;
-    display:block;
-    margin-top:40px;
-    text-align:center;
-    padding:50px;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    padding: 50px;
     margin-bottom: 200px;
+}
+
+.question-container {
+    background-color: rgb(133, 133, 209);
+    border-radius: 10px;
+    /*display: flex;*/
+
+    margin: 10px 20px;
+    padding: 5px;
+    text-align: left;
+
+}
+
+.options label,
+.options label input {
+    display: inline-block;
+
 }
