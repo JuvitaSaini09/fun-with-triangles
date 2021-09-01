@@ -66,6 +66,7 @@ button {
 
 button:hover {
     background-color: rgb(67, 67, 218);
+    color:white;
 }
 
 #underline1,
@@ -85,8 +86,8 @@ span {
     display: block;
     margin-top: 40px;
     text-align: center;
-    padding: 50px;
-    margin-bottom: 200px;
+    padding: 5px;
+    margin-bottom: 20px;
 }
 
 .question-container {
