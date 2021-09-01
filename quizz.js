@@ -15,6 +15,7 @@ function OnClickHandler() {
         }
         index++;
     }
+    result.style.color="green";
     result.innerText = "scores are :" + scores;
 }
 

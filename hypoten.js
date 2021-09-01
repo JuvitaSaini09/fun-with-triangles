@@ -19,9 +19,11 @@ function checkHypotenuse() {
         sumOfSquares = calculateSumOfSquares(valueOfA, valueOfB);
         const hypoTenus = Math.sqrt(sumOfSquares);
         result.style.display = "block";
-        result.innerText = hypoTenus;
+        result.style.color="green";
+        result.innerText = "Hypotenuse : "+hypoTenus;
     } else {
         result.style.display = "block";
+        result.style.color="red";
         result.innerText = "Enter all  the values  !!";
     }
 }

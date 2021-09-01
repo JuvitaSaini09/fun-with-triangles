@@ -8,14 +8,16 @@ function checkHypotenuse() {
     result.style.display = "none";
 
     if (height.value && base.value) {
-
         const Height = Number(height.value);
         const Base = Number(base.value);
         const Area = (Height * Base) / 2;
         result.style.display = "block";
-        result.innerText = Area;
+
+        result.style.color="green";
+        result.innerText = "Area :"+Area+" cmsquares";
     } else {
         result.style.display = "block";
+        result.style.color="red";
         result.innerText = "Enter all  the values  !!";
     }
 }

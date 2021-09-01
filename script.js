@@ -14,11 +14,14 @@ function checkingTriangle() {
         angleSum = sumOfTriangle(angle_1, angle_2, angle_3)
 
         if (angleSum === 180) {
+            result.style.color="green";
             result.innerText = "Yay!! It can form a triangle";
         } else {
+            result.style.color="#800000";
             result.innerText = "ohoo !! they don't form a  angle";
         }
     } else {
+        result.style.color="red";
         result.innerText = "Enter all the values  !!";
 
     }
