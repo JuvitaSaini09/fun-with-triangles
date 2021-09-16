@@ -11,14 +11,19 @@ function checkingTriangle() {
         const angle_1 = Number(angle1.value);
         const angle_2 = Number(angle2.value);
         const angle_3 = Number(angle3.value);
-        angleSum = sumOfTriangle(angle_1, angle_2, angle_3)
+        if (angle_1 > 0 && angle_2 > 0 && angle_3 > 0) {
+            angleSum = sumOfTriangle(angle_1, angle_2, angle_3)
 
-        if (angleSum === 180) {
-            result.style.color = "green";
-            result.innerText = "Yay!! It can form a triangle";
+            if (angleSum === 180) {
+                result.style.color = "green";
+                result.innerText = "Yay!! It can form a triangle";
+            } else {
+                result.style.color = "#800000";
+                result.innerText = "ohoo !! they don't form a  angle";
+            }
         } else {
-            result.style.color = "#800000";
-            result.innerText = "ohoo !! they don't form a  angle";
+            result.style.color = "red";
+            result.innerText = "Enter values greator than zero !!";
         }
     } else {
         result.style.color = "red";
